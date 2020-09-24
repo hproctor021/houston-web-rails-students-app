@@ -1,0 +1,9 @@
+<center>
+<h1>Meet our lovely staffmember: </h1>
+<hr>
+
+<h1><%=@instructor.name%></h1>
+
+<%=form_for @instructor, method: :delete do |f| %>
+    <%=f.submit "Time for Sabbatical" %>
+    <%end%>

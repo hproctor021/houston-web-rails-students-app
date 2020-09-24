@@ -1,0 +1,15 @@
+<center><%= form_for @student do | f | %>    
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    </br><br>
+    <%= f.label :major %>
+    <%= f.text_field :major %>
+    </br><br>
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+    </br><br>
+    <%= f.label :Instructor %>
+    <%= f.collection_select :instructor_id, Instructor.all, :id, :name, prompt: true%>
+    </br><br>
+    <%= f.submit %>
+    <%end%> 

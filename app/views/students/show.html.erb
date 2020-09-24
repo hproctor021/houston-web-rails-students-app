@@ -1,0 +1,10 @@
+<center><h1> <%= @student.name %> </h1>
+<hr>
+<h4>Is majoring in: </h4>
+<li><li><li><h3><%=@student.major%> with <%=@student.instructor.name%></h3></li></li></li>
+<p> At the ripe age of <%=@student.age%>
+<hr>
+
+<%=form_for @student, method: :delete do |f| %>
+    <%=f.submit "Graduate Student" %>
+    <%end%>
